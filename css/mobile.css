@@ -1,0 +1,83 @@
+@media screen and (max-width: 480px) {
+  /* Navbar */
+  #nav-bar .container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-bar-a {
+    justify-content: flex-start;
+  }
+
+  /* Job Info */
+  #job-info .container {
+    grid-template-columns: 1fr;
+  }
+
+  .job-info-exp {
+    grid-row: 1 / 2;
+    grid-column: 1 / span 1;
+  }
+
+  .job-info-skill {
+    grid-row: 2 / 3;
+    grid-column: 1 / span 1;
+  }
+
+  .job-info-lang {
+    grid-row: 3 / 4;
+    grid-column: 1 / span 1;
+  }
+
+  .job-info-action {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+  }
+
+  .job-info-edu {
+    grid-row: 5 / 6;
+    grid-column: 1 / -1;
+  }
+
+  .job-info-hobby {
+    grid-row: 6 / 7;
+    grid-column: 1 / -1;
+  }
+
+  /* Certificate */
+  .container-certs-row {
+    border-bottom: none;
+    padding: 0;
+
+    flex-direction: column;
+  }
+
+  .container-cert-detail {
+    border-bottom: 1px solid #ff922b;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .container-cert-detail:nth-child(even):last-child {
+    border-left: none;
+  }
+
+  .container-certs-row:last-child .container-cert-detail:last-child {
+    border-bottom: none;
+  }
+
+  /* Projects */
+  .container-projects {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .container-proj-content .proj-time {
+    padding: 12px 24px;
+    gap: 24px;
+  }
+
+  .container-proj-content .proj-detail tr td:first-child {
+    width: 80px;
+  }
+}

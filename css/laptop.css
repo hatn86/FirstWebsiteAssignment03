@@ -1,0 +1,18 @@
+@media screen and (min-width: 769px) {
+  /* Digital CV */
+  .digi-cv {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .digi-cv-timeline {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+
+  .position-middle {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+}

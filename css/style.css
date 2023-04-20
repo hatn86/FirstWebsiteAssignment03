@@ -1,0 +1,536 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+/*
+      Main Color: #087f5b
+      Grey Color: #343a40
+      */
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #495057;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+.bg-purple {
+  background-color: #9e88ff;
+}
+
+.start-60 {
+  left: 60% !important;
+}
+
+.border-bottom-dotted {
+  border-bottom: 1px dotted;
+}
+
+.bg-personal-info {
+  background-color: #f1f3f5;
+}
+
+#banner,
+#nav-bar,
+#about,
+#job-info,
+#certificate,
+#project,
+#footer,
+section .row,
+section > .container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+section > .container {
+  max-width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+i {
+  color: #339af0;
+}
+
+/* Banner */
+
+/* Cach 1: them mot div bao ngoai banner va mot the img nam trong div do */
+/* .banner {
+  width: 100%;
+  max-height: 350px;
+  overflow: hidden;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    rgba(34, 34, 34, 0.6),
+    rgba(34, 34, 34, 0.6)
+  );
+}
+
+.banner img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: relative;
+}
+
+#banner {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+} */
+
+#banner {
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../images/banner.jpg);
+  background-size: cover;
+  height: 350px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+#banner h1 {
+  font-size: 36px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#banner span {
+  font-size: 12px;
+  color: #adb5bd;
+}
+
+/* Nav bar */
+#nav-bar {
+  text-align: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+#nav-bar .container {
+  width: 100%;
+  padding: 0;
+  /* display: flex; */
+  justify-content: center;
+  gap: 0;
+}
+
+#nav-bar .container a:link,
+#nav-bar .container a:visited {
+  color: #343a40;
+}
+
+.nav-bar-a {
+  padding: 12px 24px;
+  border-left: 1px solid #adb5bd;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-a:last-child {
+  border-right: 1px solid #adb5bd;
+}
+
+.nav-bar-a i {
+  color: #339af0;
+}
+
+.nav-bar-a-info {
+  padding: 12px 64px;
+  position: relative;
+
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav-bar-a-info strong {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.nav-bar-a-info span {
+  font-size: 8px;
+  color: #adb5bd;
+}
+
+.nav-bar-potrait {
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Nav bar */
+
+/* About */
+#about {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+#about .container {
+  padding: 0;
+  /* display: flex; */
+  justify-content: center;
+  gap: 0;
+}
+
+div#target,
+div#personal-info {
+  padding: 30px 30px;
+}
+
+#about .container > div > h1 {
+  margin-bottom: 24px;
+}
+
+#target p {
+  font-size: 14px;
+}
+
+#personal-info {
+  /* width: 50%; */
+  margin: 0;
+}
+
+#personal-info ul {
+  list-style: none;
+}
+
+#personal-info ul li {
+  font-size: 14px;
+}
+
+#personal-info ul li span {
+  font-weight: bold;
+}
+
+.personal-info-icon {
+  padding-top: 30px;
+}
+
+/* About */
+
+/* Job Info */
+
+#job-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+}
+
+#job-info .container > div {
+  padding: 30px 12px;
+  border: 1px solid #adb5bd;
+  margin-top: 0 !important;
+
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: max-content;
+  gap: 48px 0;
+  justify-content: center;
+}
+
+#job-info .container > div > i {
+  width: 32px;
+  transform: scale(2);
+  color: #adb5bd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#job-info .container > div ul.job-info-content {
+  grid-column: 1/-1;
+
+  padding: 0 24px;
+  font-size: 14px;
+}
+
+ul.job-info-content > li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+ul.job-info-content > li::marker {
+  color: #339af0;
+}
+
+ul.job-info-content > li > *:not(:last-child) {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+ul.job-info-detail {
+  list-style-type: none;
+}
+
+ul.job-info-detail > li::before {
+  content: "- ";
+}
+
+.job-info-now {
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #339af0;
+  color: #f7f7f7;
+}
+
+#job-info .container > div div.job-info-content-div {
+  font-size: 14px;
+
+  grid-column: 1/-1;
+
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 12px;
+}
+
+div.job-info-content-div div.job-content-detail {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 5px;
+}
+
+div.job-info-content-div div.job-content-detail > i {
+  border: 1px solid #339af0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.job-info-content-div ul.job-info-detail-ul {
+  list-style-type: none;
+  grid-column: 1/-1;
+}
+
+/* ul.job-info-detail-ul li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px 6px;
+} */
+
+ul.job-info-detail-ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+/* ul.job-info-detail-ul li > *:first-child {
+  grid-column: 1/-1;
+} */
+
+ul.job-info-detail-ul li > div {
+  display: inline-block;
+  height: 2px;
+  width: 50px;
+  background-color: #adb5bd;
+  margin-right: 12px;
+}
+
+ul.job-info-detail-ul li > div:last-child {
+  margin-right: 0;
+}
+
+ul.job-info-detail-ul li > div.active {
+  background-color: #339af0;
+}
+/* Job Info */
+
+/* CERTIFICATE */
+.container-certs {
+  padding-top: 32px;
+}
+
+.container-certs-row {
+  padding: 24px 0;
+  border-bottom: 1px solid #ff922b;
+
+  /* display: flex; */
+  gap: 80px;
+}
+
+.container-certs-row:last-child {
+  border-bottom: none;
+}
+
+.container-cert-detail {
+  display: flex;
+  justify-content: start;
+  gap: 24px;
+}
+
+.container-cert-detail:nth-child(even):last-child {
+  border-left: 1px solid #ff922b;
+  padding-left: 12px;
+}
+
+.container-cert-detail img {
+  width: 170px;
+}
+
+.container-cert-detail > div ul {
+  margin-top: 12px;
+  list-style-type: none;
+  font-size: 14px;
+  color: #adb5bd;
+}
+
+.container-cert-detail > div ul li::before {
+  content: "- ";
+}
+
+.container-cert-detail > div strong {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+/* CERTIFICATE */
+
+/* PROJECT */
+.container-projects {
+  font-size: 14px;
+  color: #495057;
+
+  /* display: flex; */
+  justify-content: center;
+  gap: 24px;
+}
+
+.container-proj-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto) 1fr;
+}
+
+.container-proj-content img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.container-proj-content .proj-name {
+  text-transform: uppercase;
+  border: 1px solid #adb5bd;
+  padding: 12px 24px;
+}
+
+.container-proj-content .proj-time {
+  padding: 12px 24px;
+  border: 1px solid #adb5bd;
+  border-top: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.container-proj-content .proj-time i {
+  color: revert;
+}
+
+.container-proj-content .proj-detail {
+  border-collapse: collapse;
+}
+
+.container-proj-content .proj-detail tr {
+  border: 1px solid #adb5bd;
+}
+
+.container-proj-content .proj-detail tr:first-child {
+  border-top: none;
+}
+
+.container-proj-content .proj-detail tr td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+.container-proj-content .proj-detail tr td:first-child {
+  width: 80px;
+}
+/* PROJECT */
+
+/* FOOTER */
+#footer .container ul {
+  list-style-type: none;
+  font-size: 14px;
+
+  /* display: flex; */
+  justify-content: center;
+  gap: 36px;
+}
+
+#footer .container ul li a {
+  color: #adb5bd;
+
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+#footer .container ul li i {
+  transform: scale(2);
+}
+/* FOOTER */
+
+/* Digital CV */
+.digi-cv {
+  display: grid;
+  /* align-items: stretch; */
+}
+
+.digi-cv .list-group-item {
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+}
+
+.digi-cv .ts-u1 {
+  font-size: 0.8rem;
+}
+
+.digi-cv .border-purple {
+  border: 1px solid #737085;
+}
