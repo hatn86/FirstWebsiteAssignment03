@@ -1,1 +1,1 @@
-https://github.com/hatn86/FistWebsiteAssignment03
+https://hatn86.github.io/FistWebsiteAssignment03
