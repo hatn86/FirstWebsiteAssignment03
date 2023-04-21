@@ -1,6 +1,6 @@
 
 ```
-Assignment 03
+Assignment 02 Stater
 ├─ css
 │  ├─ font.css
 │  └─ style.css

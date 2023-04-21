@@ -1,4 +1,4 @@
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   /* Digital CV */
   .digi-cv {
     grid-template-columns: 2fr 1fr 1fr;
